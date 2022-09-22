@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="container text-white">
+        <h1>Alta de alumno</h1>
+    </div>
+
+</div>
+<div class="container">
+    <form #form="ngForm">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="form-group">
+                    <label for="">Legajo</label>
+                    <input required  type="text"name="Legajo" [(ngModel)]="alumno.legajo" id="Legajo" class="form-control" >
+                 </div>
+        </div>
+        <div class="col-md-8">
+                <div class="form-group">
+                    <label for="">Nombre</label>
+                    <input  required type="text"name="Nombre" [(ngModel)]="alumno.nombre" id="Nombre" class="form-control" >
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+                <div class="form-group">
+                    <label for="">Apellido</label> 
+                    <input  required type="text"name="Apellido" [(ngModel)]="alumno.apellido" id="Apellido" class="form-control" >
+                </div>
+        </div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="">Id</label> 
+                <input  required type="text"name="id" [(ngModel)]="alumno.id" id="id" class="form-control" >
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" [disabled]="form.invalid" (click)="ingresarAlumno()">Enviar</button>
+    <br>
+    <br>
+    <button class="btn btn-danger" (click)="cancelar()">Cancelar</button>
+</form>
+</div>
+
+
+
+
