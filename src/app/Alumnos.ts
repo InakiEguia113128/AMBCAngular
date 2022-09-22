@@ -10,6 +10,8 @@ export class Alumnos{
         this.apellido = ape;
         this.id = id;
     }
+
+
     toString(){
         return this.nombre+" "+this.apellido+" :"+this.legajo
     }

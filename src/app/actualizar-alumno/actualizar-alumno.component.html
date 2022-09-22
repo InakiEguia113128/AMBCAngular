@@ -10,13 +10,13 @@
         <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Legajo</label>
-                    <input type="text"name="Legajo" [(ngModel)]="alumno.legajo" placeholder="{{alumno.legajo}}" id="Legajo" class="form-control" >
+                    <input type="text"name="legajo" [(ngModel)]="alumno.legajo" placeholder="{{alumno.legajo}}" id="legajo" class="form-control" >
                  </div>
         </div>
         <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text"name="Nombre" [(ngModel)]="alumno.nombre" placeholder="{{alumno.nombre}}" id="Nombre" class="form-control" >
+                    <input type="text"name="nombre" [(ngModel)]="alumno.nombre" placeholder="{{alumno.nombre}}" id="aombre" class="form-control" >
                 </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
         <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Apellido</label> 
-                    <input type="text"name="Apellido" [(ngModel)]="alumno.apellido" placeholder="{{alumno.apellido}}" id="Apellido" class="form-control" >
+                    <input type="text"name="apellido" [(ngModel)]="alumno.apellido" placeholder="{{alumno.apellido}}" id="apellido" class="form-control" >
                 </div>
         </div>
         <div class="col-md-6">
@@ -34,8 +34,7 @@
             </div>
         </div>
     </div>
-    <button class="btn btn-primary" (click)="actualizarAlumno()">Enviar</button>
-    
+    <button class="btn btn-primary" (click)="actualizarAlumno()">Enviar</button>   
 </form>
 </div>
 
